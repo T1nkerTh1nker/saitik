@@ -1,54 +1,51 @@
 <!DOCTYPE html>
-<!-- Неровные отступы, но это незначительная придирка -->
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>UNDER FLUX_SPOT</title>
-    <link href="style.css" rel="stylesheet"> <!-- Хорошим тоном будет поместить файлы отвечающие за стили в соответствующую папку -->
-  </head>
-  <body>
-    <header class="site-header"> <!-- Необязательно всему добавля классы -->
-      <div class="container">  <!-- container немного неопределенное название для класса таккое ощущение что должны быть либо еще классы либо дополнения для класса -->
-        <img class="logo" src="img/logo-full.svg" width="62" height="17" alt="Логотип магазина gloevk"> <!-- Здесь молодец что использовал alt -->
-    </div>
-    </header>
-    <section class="intro"><!-- Тег section как я понял должен логически разделять какойто схожий по своему смыслу контент и поэтому его редко используют потомучто div удобнее.
-     Отсутсвие отступов у этого элемента создает ощущение что его часть уходит за границу экрана, некрасиво -->
-      <div><!-- class=""> Зачем пустой класс -->
-        <h1 class="title">какой <b>нибудь</b> заголовок</h1> <!-- Если это заголовок сайта то он должен быть в header, если нет то что означает, в чем его смысл -->
-        <p>*АРТИСТЫ, С КОТОРЫМИ РАБОТАЛ*</p> <!-- Зависит от смысла h1. Если h1 это заголовок сайта, то лучше это вынести на тематическую страницу вроде "О нас" или соответствующий раздел на странице, ели нет, то зависит от смылса -->
-      </div>
-    </section>
-    <section class="popular-products">
-      <div class="container">  <!-- container лучше подошел для ul как второй класс в данной реализации -->
-        <h2 class="section-title">МОИ <b>СОЗДАННЫЕ</b> РАБОТЫ</h2>  <!-- section-title плохое название потому что оно слишки абстрактное, лучше popular-products--title и лучше вынести за contianer логичнее выглядит -->
-        <ul class="products-list">  <!-- Мне не нравится этот способ реализации потому что контент элемента списка по идее должен быть небольшим, и лучше сделать div с flex -->
-          <li class="product-card">
-            <h3>*НАЗВАНИЕ ПРОЕКТА*</h3>
-            <p>*НАЗВАНИЕ ПРОЕКТА*</p>
-            <p class="price"><del>*ЦЕНА*</del> *ЦЕНА*</p>
-            <img src="img/item-mseyulida.jpg" width="156" height="120" alt="*НАЗВАНИЕ ПРОЕКТА*»">
-          </li>
-          <li class="product-card">
-            <h3>Рмаериби</h3>
-            <p>*НАЗВАНИЕ ПРОЕКТА*</p>
-            <p class="price">*ЦЕНА*</p>
-            <img src="img/item-rmaeribi.jpg" width="156" height="120" alt="*НАЗВАНИЕ ПРОЕКТА*">
-          </li>
-          <li class="product-card">
-            <h3>*НАЗВАНИЕ ПРОЕКТА*</h3>
-            <p>*НАЗВАНИЕ ПРОЕКТА*</p>
-            <p class="price">*ЦЕНА*</p>
-            <img src="img/item-bletub.jpg" width="156" height="120" alt="*НАЗВАНИЕ ПРОЕКТА*">
-          </li>
-        </ul>
-      </div>
-    </section>
-    <footer class="site-footer">
-      <div class="container">
-        <img class="logo-link" src="img/logo-short.svg" width="47" height="13" alt="Логотип ">
-        <p class="copyright">© 2022</p>
-      </div>
-    </footer>
-  </body>
+	<head>
+		<meta charset="UTF-8">
+		<title>UNDER FLUX_SPOT</title>
+		<link href="styles/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<div class="row row--logo">
+				<img class="logo" src="img/logo-full.svg" alt="Логотип магазина gloevk">
+			</div>
+			<div>
+				<h1 class="title">какой <span>нибудь</span> заголовок</h1>
+				<p>*АРТИСТЫ, С КОТОРЫМИ РАБОТАЛ*</p>
+			</div>
+		</header>
+		<main>
+			<div class="popular-products">
+				<h2 class="popular-products--title">МОИ <span>СОЗДАННЫЕ</span> РАБОТЫ</h2>
+					<div class="row products-row">
+				    <div class="product">
+				    	<img class="product-img" src="img/item-mseyulida.jpg" alt="*НАЗВАНИЕ ПРОЕКТА*»">
+				      <h3>*НАЗВАНИЕ ПРОЕКТА*</h3>
+				      <p>*ОПИСАНИЕ ПРОЕКТА*</p>
+				      <p class="product-price"><del>*ЦЕНА*</del> *ЦЕНА*</p>
+				    </div>
+				    <div class="product">
+				    	<img class="product-img" src="img/item-rmaeribi.jpg" alt="*НАЗВАНИЕ ПРОЕКТА*">
+				      <h3>Рмаериби</h3>
+				      <p>*НАЗВАНИЕ ПРОЕКТА*</p>
+
+				      <p class="product-price">*ЦЕНА*</p>
+				    </div>
+				    <div class="product">
+				    	<img class="product-img" src="img/item-bletub.jpg" alt="*НАЗВАНИЕ ПРОЕКТА*">
+				      <h3>*НАЗВАНИЕ ПРОЕКТА*</h3>
+				      <p>*НАЗВАНИЕ ПРОЕКТА*</p>
+				      <p class="product-price">*ЦЕНА*</p>
+				    </div>
+				  </div>
+		    </div>
+		</main>
+		<footer>
+		  <div class="row">
+		    <img class="logo-link" src="img/logo-short.svg" alt="Логотип ">
+		    <p class="copyright">© 2022</p>
+		  </div>
+		</footer>
+	</body>
 </html>
