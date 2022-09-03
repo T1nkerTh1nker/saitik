@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>UNDER FLUX_SPOT</title>
+		<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+	</head>
+	<body>
+		<header>
+			<div class="row row--logo">
+				<img class="logo" src="img/logo-full.svg" alt="Логотип магазина gloevk">
+			</div>
+			<div>
+				<h1 class="title">какой <span>нибудь</span> заголовок</h1>
+				<p>*АРТИСТЫ, С КОТОРЫМИ РАБОТАЛ*</p>
+			</div>
+		</header>
+		<main>
+			<div class="popular-products">
+				<h2 class="popular-products--title">МОИ <span>СОЗДАННЫЕ</span> РАБОТЫ</h2>
+                    {% block content %}{% endblock %}
+		    </div>
+		</main>
+		<footer>
+		  <div class="row">
+		    <img class="logo-link" src="img/logo-short.svg" alt="Логотип ">
+		    <p class="copyright">© 2022</p>
+		  </div>
+		</footer>
+	</body>
+</html>

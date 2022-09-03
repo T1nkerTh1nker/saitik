@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row products-row">
+<div class="product">
+    <img class="product-img" src="img/item-mseyulida.jpg" alt="*НАЗВАНИЕ ПРОЕКТА*»">
+  <h3>*НАЗВАНИЕ ПРОЕКТА*</h3>
+  <p>*ОПИСАНИЕ ПРОЕКТА*</p>
+  <p class="product-price"><del>*ЦЕНА*</del> *ЦЕНА*</p>
+</div>
+<div class="product">
+    <img class="product-img" src="img/item-rmaeribi.jpg" alt="*НАЗВАНИЕ ПРОЕКТА*">
+  <h3>{{owner}}</h3>
+  <p>*НАЗВАНИЕ ПРОЕКТА*</p>
+
+  <p class="product-price">*ЦЕНА*</p>
+</div>
+<div class="product">
+    <img class="product-img" src="img/item-bletub.jpg" alt="*НАЗВАНИЕ ПРОЕКТА*">
+  <h3>*НАЗВАНИЕ ПРОЕКТА*</h3>
+  <p>*НАЗВАНИЕ ПРОЕКТА*</p>
+  <p class="product-price">*ЦЕНА*</p>
+</div>
+</div>
+{% endblock %}
