@@ -1,31 +1,75 @@
-<!DOCTYPE html>
-<html lang="ru">
-	<head>
-		<meta charset="UTF-8">
-		<title>UNDER FLUX_SPOT</title>
-		<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
-	</head>
+<!DOKTYPE html>
+<html lang = "ru">
+    <head>
+      <meta charset="utf-8">
+      <meta name="keywords" content="саундмейкер, музыкант, музыка, треки"><!--С помощью метатегов можно добавить на страницу информацию полезную для поисковых систем: перечень ключевых слов и краткое описание страницы.-->
+       <title>Сайт-визитка саундмейкера</title>
+       <meta name = "description" content = "bla-bla-bla-blaa">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+    </head>
 	<body>
-		<header>
-			<div class="row row--logo">
-				<img class="logo" src="img/logo-full.svg" alt="Логотип магазина gloevk">
+        <header>
+			<!-- Contact data  -->
+			<div class="container">
+				{% include 'contacts.html' %}
 			</div>
-			<div>
-				<h1 class="title">какой <span>нибудь</span> заголовок</h1>
-				<p>*АРТИСТЫ, С КОТОРЫМИ РАБОТАЛ*</p>
-			</div>
-		</header>
-		<main>
-			<div class="popular-products">
-				<h2 class="popular-products--title">МОИ <span>СОЗДАННЫЕ</span> РАБОТЫ</h2>
-                    {% block content %}{% endblock %}
-		    </div>
+			<!-- End contacts -->
+        </header>
+			<main>
+			<div class="block_name"><h1 style="color:brown;">UNDER FLEX_SPOT </h1></div>
+				{% block content %}{% endblock %}
+          <div class="nav">
+<div class="nav">
+            <p><img src="./vaden-pro-logo.png"  alt="" /></p>
+            <p class="string"><a href="#">Ссылка меню 1</a></p>
+        </div>
+        <div class="nav">
+            <p><img src="./vaden-pro-logo.png"  alt="" /></p>
+            <p class="string"><a href="#">Ссылка меню 2</a></p>
+        </div>
+         <div class="nav">
+            <p><img src="./vaden-pro-logo.png"  alt="" /></p>
+            <p class="string"><a href="#">Ссылка меню 3</a></p>
+        </div>
+        <div class="nav">
+            <p><img src="./vaden-pro-logo.png"  alt="" /></p>
+            <p class="string"><a href="#">Ссылка меню 4</a></p>
+        </div>
+          </div>
+          <!-- основной контент, повторяющийся на других страницах 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
+           <img class="avatar" src="img/raccoon.svg" width="160" height="80" alt="Аватарка">
+            <nav class = "blog-navigation">
+              <h3>Процесс работы</h3>
+              <ul class = "points">
+                  <p>слушаете пробник из моей коллекции</p>
+                  <p>связываетесь со мной</p>
+                  <p>мы составляем тз</p>
+                  <p>делаем</p>
+                  <p>заказ готов</p>
+              </ul>
+            </nav>
+            <section>
+        <h2>Навыки</h2>
+        <dl class="skills">
+          <dt>HTML</dt>
+
+          <dd><div class="skills-level skills-level-ok" style="width: 60%">60%</div></dd>
+          <dt>CSS</dt>
+          <dd><div class="skills-level">20%</div></dd>
+          <dt>JS</dt>
+          <dd><div class="skills-level">10%</div></dd>
+        </dl>
+      </section>
+            <section>
+                <h2>ОСНОВА</h2> <p>Здравствуй! Я Миша и я сделаю тебе охуенный трек!</p> <p>Связь со мной...</p>
+            </section>
+            <section>Раздел про навыки</section>
+            <aside>Здесь могла быть ваша реклама</aside>-->
 		</main>
 		<footer>
-		  <div class="row">
-		    <img class="logo-link" src="img/logo-short.svg" alt="Логотип ">
-		    <p class="copyright">© 2022</p>
-		  </div>
+			<div class="container">
+				{% include 'contacts.html' %}
+			</div>
 		</footer>
 	</body>
 </html>

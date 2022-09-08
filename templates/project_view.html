@@ -1,24 +1,21 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="row products-row">
-<div class="product">
-    <img class="product-img" src="img/item-mseyulida.jpg" alt="*НАЗВАНИЕ ПРОЕКТА*»">
-  <h3>*НАЗВАНИЕ ПРОЕКТА*</h3>
-  <p>*ОПИСАНИЕ ПРОЕКТА*</p>
-  <p class="product-price"><del>*ЦЕНА*</del> *ЦЕНА*</p>
-</div>
-<div class="product">
-    <img class="product-img" src="img/item-rmaeribi.jpg" alt="*НАЗВАНИЕ ПРОЕКТА*">
-  <h3>{{owner}}</h3>
-  <p>*НАЗВАНИЕ ПРОЕКТА*</p>
-
-  <p class="product-price">*ЦЕНА*</p>
-</div>
-<div class="product">
-    <img class="product-img" src="img/item-bletub.jpg" alt="*НАЗВАНИЕ ПРОЕКТА*">
-  <h3>*НАЗВАНИЕ ПРОЕКТА*</h3>
-  <p>*НАЗВАНИЕ ПРОЕКТА*</p>
-  <p class="product-price">*ЦЕНА*</p>
-</div>
-</div>
+<div class="befo_name container">
+                <div class="sidebar">левая часть
+					<ul class="names">
+                        {% for author in artists %}
+						<li class="artists_list">
+							<a>{{author}}</a>
+						</li>
+                        {% endfor %}
+					</ul>
+                </div>
+				{% for project in projects %}
+				<div class="content">
+					<h2>{{project.name}}</h2>
+					<p>{{project.description}}</p>
+				</div>
+				{% endfor %}
+				<div class="block_name"> <h1 style="color:brown;">UNDER FLEX_SPOT </h1></div>
+			</div>
 {% endblock %}
