@@ -1,0 +1,75 @@
+<!DOKTYPE html>
+<html lang = "ru">
+    <head>
+      <meta charset="utf-8">
+      <meta name="keywords" content="саундмейкер, музыкант, музыка, треки"><!--С помощью метатегов можно добавить на страницу информацию полезную для поисковых систем: перечень ключевых слов и краткое описание страницы.-->
+       <title>Сайт-визитка саундмейкера</title>
+       <meta name = "description" content = "bla-bla-bla-blaa">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+    </head>
+	<body>
+        <header>
+			<!-- Contact data  -->
+			<div class="container">
+				{% include 'contacts.html' %}
+			</div>
+			<!-- End contacts -->
+        </header>
+			<main>
+			<div class="block_name"><h1 style="color:brown;">UNDER FLEX_SPOT </h1></div>
+				{% block content %}{% endblock %}
+          <div class="nav">
+<div class="nav">
+            <p><img src="./vaden-pro-logo.png"  alt="" /></p>
+            <p class="string"><a href="#">Ссылка меню 1</a></p>
+        </div>
+        <div class="nav">
+            <p><img src="./vaden-pro-logo.png"  alt="" /></p>
+            <p class="string"><a href="#">Ссылка меню 2</a></p>
+        </div>
+         <div class="nav">
+            <p><img src="./vaden-pro-logo.png"  alt="" /></p>
+            <p class="string"><a href="#">Ссылка меню 3</a></p>
+        </div>
+        <div class="nav">
+            <p><img src="./vaden-pro-logo.png"  alt="" /></p>
+            <p class="string"><a href="#">Ссылка меню 4</a></p>
+        </div>
+          </div>
+          <!-- основной контент, повторяющийся на других страницах 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
+           <img class="avatar" src="img/raccoon.svg" width="160" height="80" alt="Аватарка">
+            <nav class = "blog-navigation">
+              <h3>Процесс работы</h3>
+              <ul class = "points">
+                  <p>слушаете пробник из моей коллекции</p>
+                  <p>связываетесь со мной</p>
+                  <p>мы составляем тз</p>
+                  <p>делаем</p>
+                  <p>заказ готов</p>
+              </ul>
+            </nav>
+            <section>
+        <h2>Навыки</h2>
+        <dl class="skills">
+          <dt>HTML</dt>
+
+          <dd><div class="skills-level skills-level-ok" style="width: 60%">60%</div></dd>
+          <dt>CSS</dt>
+          <dd><div class="skills-level">20%</div></dd>
+          <dt>JS</dt>
+          <dd><div class="skills-level">10%</div></dd>
+        </dl>
+      </section>
+            <section>
+                <h2>ОСНОВА</h2> <p>Здравствуй! Я Миша и я сделаю тебе охуенный трек!</p> <p>Связь со мной...</p>
+            </section>
+            <section>Раздел про навыки</section>
+            <aside>Здесь могла быть ваша реклама</aside>-->
+		</main>
+		<footer>
+			<div class="container">
+				{% include 'contacts.html' %}
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="befo_name container">
+                <div class="sidebar">левая часть
+					<ul class="names">
+                        {% for author in artists %}
+						<li class="artists_list">
+							<a>{{author}}</a>
+						</li>
+                        {% endfor %}
+					</ul>
+                </div>
+				{% for project in projects %}
+				<div class="content">
+					<h2>{{project.name}}</h2>
+					<p>{{project.description}}</p>
+				</div>
+				{% endfor %}
+				<div class="block_name"> <h1 style="color:brown;">UNDER FLEX_SPOT </h1></div>
+			</div>
+{% endblock %}
