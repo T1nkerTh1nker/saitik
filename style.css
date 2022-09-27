@@ -13,7 +13,7 @@ body{
   line-height: 26px;
   font-family: "Arial", sans-serif;
   color: #222222;
-  background:#ffffff url("") no-repeat top center;
+  background:black url("") no-repeat top center;
 }
 .blog-navigation{
     font-size: 18px;
@@ -118,3 +118,86 @@ nav {
         .string {
          text-align: center; /*Равняем текст по-горизонтали*/
         }
+.services{ /* услуги */
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 60vh;
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(rgba(1,1,1,.6),rgba(1,1,1,.6)), url(bg.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	font-family: 'Play', sans-serif;
+}
+.containerr {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 60%;
+}
+
+.card {
+	position: relative;
+	width: 250px;
+	height: 300px;
+	border-bottom: 3px solid #7acbff;
+	transition: .3s;
+}
+
+.card:hover {
+	margin-top: -30px;
+}
+
+.fone {
+	position: relative;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.data {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(0deg, 
+	rgba(22,92,127,1), 
+	rgba(22,92,127,1), 
+	rgba(1, 1, 1, 0), 
+	rgba(237, 226, 7, .2));
+	top: 0;
+}
+
+.date {
+	color: #7acbff;
+	font-size: 15px;
+	margin: 200px 0 0 20px;
+	padding: 0;
+}
+
+.card-link {
+	display: block;
+	width: 90%;
+	color: #fff;
+	font-size: 26px;
+	text-decoration: none;
+	margin: 5px 0 0 20px;
+	transition: .3s;
+}
+
+.card-link:hover {
+	color: #7acbff;
+}
+
+.tong {
+	position: absolute;
+	border-bottom: 5px solid #7acbff;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	height: 0;
+	width: 80px;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
